@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (total != 0) {
                 square.classList.add('checked');
                 square.innerHTML = total;
-                return
+                return;
             }
             checkSquare(square, currentId);
         }
@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const isRightEdge = (currentId % width === width - 1);
 
         setTimeout(() => {
-            if (cuurentId > 0 && !isLeftEdge) {
+            if (currentId > 0 && !isLeftEdge) {
                 const newId = squares[parseInt(currentId) - 1].id;
                 const newSquare = document.getElementById(newId);
                 click(newSquare);

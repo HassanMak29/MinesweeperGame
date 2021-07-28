@@ -1,8 +1,17 @@
+body {
+  background-color: #8db62e;
+}
+
+.name {
+  font-size: 32px;
+}
+
 .container {
   width: 500px;
   margin: auto;
   align-content: center;
   justify-content: center;
+  background-color: #8db62e;
 }
 
 .grid {

@@ -56,7 +56,10 @@ div {
 .button {
   width: 200px;
   height: 50px;
-  margin-top: 13px;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  margin: 13px auto;
   background-color: #e76346;
   color: white;
   border: none;

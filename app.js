@@ -29,6 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
         window.location.reload();
     }
     button.addEventListener('click', refreshPage)
+    button.style.display = 'none';
 
     // Create board
     function createBoard() {
@@ -177,6 +178,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Game over
     function gameOver(square) {
         result.innerHTML = 'BOOM! game over';
+        button.style.display = 'block';
         isGameOver = true;
 
         // show all the bombs

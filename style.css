@@ -1,6 +1,8 @@
 .container {
   width: 500px;
+  margin: auto;
   align-content: center;
+  justify-content: center;
 }
 
 .grid {
@@ -49,4 +51,17 @@ div {
 #result {
   margin-top: 5px;
   color: #e76346;
+}
+
+.button {
+  width: 200px;
+  height: 50px;
+  margin-top: 13px;
+  background-color: #e76346;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 24px;
+  cursor: pointer;
+  text-transform: uppercase;
 }

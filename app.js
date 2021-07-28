@@ -2,14 +2,35 @@ document.addEventListener('DOMContentLoaded', () => {
     const grid = document.querySelector('.grid');
     const flagsLeft = document.querySelector('#flags-left');
     const result = document.querySelector('#result');
+    const button = document.querySelector('.button')
     let width = 10;
     let bombAmount = 20;
     let flags = 0;
     let squares = []
     let isGameOver = false;
 
-    // Create board
+    function reset() {
+        const grid = document.querySelector('.grid');
+        const flagsLeft = document.querySelector('#flags-left');
+        const result = document.querySelector('#result');
+        width = 10;
+        bombAmount = 20;
+        flags = 0;
+        squares = []
+        isGameOver = false;
+    }
 
+    function playAgain() {
+        reset();
+        createBoard();
+    }
+
+    function refreshPage() {
+        window.location.reload();
+    }
+    button.addEventListener('click', refreshPage)
+
+    // Create board
     function createBoard() {
         flagsLeft.innerHTML = bombAmount;
 
@@ -179,5 +200,4 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
     }
-
 })

@@ -6,13 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MineSweeper</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
     <script src="app.js"></script>
   </head>
   <body>
     <div class="container">
+      <div class="name">Hassan's Minesweeper Game</div>
       <div class="grid"></div>
       <div>Flags left: <span id="flags-left"></span></div>
       <div id="result"></div>
+      <button class="button" onclick="refreshPage()">Play again</button>
     </div>
   </body>
 </html>

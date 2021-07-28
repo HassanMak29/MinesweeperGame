@@ -9,21 +9,6 @@ document.addEventListener('DOMContentLoaded', () => {
     let squares = []
     let isGameOver = false;
 
-    function reset() {
-        const grid = document.querySelector('.grid');
-        const flagsLeft = document.querySelector('#flags-left');
-        const result = document.querySelector('#result');
-        width = 10;
-        bombAmount = 20;
-        flags = 0;
-        squares = []
-        isGameOver = false;
-    }
-
-    function playAgain() {
-        reset();
-        createBoard();
-    }
 
     function refreshPage() {
         window.location.reload();
